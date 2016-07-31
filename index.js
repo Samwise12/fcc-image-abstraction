@@ -28,7 +28,8 @@ app.use(express.static('views'));
 ////Routes
 
 app.get('/', function(req,res){
-	res.sendFile(path.join(__dirname+'/views/look.html'));
+	res.send("hello");
+//	res.sendFile(path.join(__dirname+'/views/look.html'));
 });
 
 app.get('/api/imagesearch/:s',function(req,res){
