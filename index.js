@@ -28,7 +28,7 @@ app.use(express.static('views'));
 ////Routes
 
 app.get('/', function(req,res){
-	res.send("hello");
+	res.send(process.env.MONGOLAB_URI);
 //	res.sendFile(path.join(__dirname+'/views/look.html'));
 });
 
