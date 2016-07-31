@@ -7,8 +7,8 @@ var path = require('path');
 ///Config 
 var port = Number(process.env.PORT || 5000);
 //'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
-var mongoUri = process.env.MONGOLAB_URI;// || 'mongodb://localhost/store';
-//var mongoUri = 'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
+//var mongoUri = process.env.MONGOLAB_URI;// || 'mongodb://localhost/store';
+var mongoUri = 'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
 var mongoOptions = {db: {safe: true}};
 var Query = require('./model/query');
 
