@@ -24,11 +24,11 @@ mongoose.connection.on('error', function(err){
 
 app.use(express.static('views'));
 ////Routes
-
+*/
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname+'/views/look.html'));
 });
-
+/*
 app.get('/api/imagesearch/:s',function(req,res){
 var url = req.params.s
 var size = req.query.offset || 6;
