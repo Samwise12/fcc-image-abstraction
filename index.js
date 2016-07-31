@@ -14,14 +14,14 @@ var Query = require('./model/query');
 var request = require('request');
 
 var Search = require('bing.search');
-
+/*
 var mongoose = require('mongoose');
 mongoose.connect(mongoUri, mongoOptions);
 mongoose.connection.on('error', function(err){
 	console.error('MongoDB connection error: '+err);
 	process.exit(1);
 });
-
+*/
 app.use(express.static('views'));
 ////Routes
 
