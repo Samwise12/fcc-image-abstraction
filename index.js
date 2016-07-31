@@ -8,7 +8,7 @@ var path = require('path');
 var port = Number(process.env.PORT || 5000);
 //'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
 //var mongoUri = process.env.MONGOLAB_URI;// || 'mongodb://localhost/store';
-var mongoUri = 'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
+//var mongoUri = 'mongodb://Samwise12:password@ds031995.mlab.com:31995/test2'
 var mongoOptions = {db: {safe: true}};
 var Query = require('./model/query');
 
@@ -17,7 +17,7 @@ var request = require('request');
 var Search = require('bing.search');
 var mongoose = require('mongoose');
 
-mongoose.connect(mongoUri, mongoOptions);
+mongoose.connect('mongodb://Samwise12:password@ds031995.mlab.com:31995/test2', mongoOptions);
 
 mongoose.connection.on('error', function(err){
 	console.error('MongoDB connection error: '+err);
