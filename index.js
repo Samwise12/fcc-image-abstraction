@@ -21,10 +21,10 @@ mongoose.connection.on('error', function(err){
 	console.error('MongoDB connection error: '+err);
 	process.exit(1);
 });
-
+*/
 app.use(express.static('views'));
 ////Routes
-*/
+
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname+'/views/look.html'));
 });
