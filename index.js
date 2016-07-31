@@ -18,19 +18,19 @@ var Search = require('bing.search');
 var mongoose = require('mongoose');
 
 mongoose.connect(mongoUri, mongoOptions);
-/*
+
 mongoose.connection.on('error', function(err){
 	console.error('MongoDB connection error: '+err);
 	process.exit(1);
 });
-*/
+
 app.use(express.static('views'));
 ////Routes
 
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname+'/views/look.html'));
 });
-/*
+
 app.get('/api/imagesearch/:s',function(req,res){
 var url = req.params.s
 var size = req.query.offset || 6;
@@ -58,7 +58,7 @@ app.route('/api/latest/imagesearch').get(function(req,res){
 			res.json(results);
 		});
 });
-*/
+
 app.listen(port, function(){
 	console.log('app running');
 });
