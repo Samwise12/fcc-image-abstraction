@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 ///Config 
-
+var port = Number(process.env.PORT || 5000);
 var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/store';
 var mongoOptions = {db: {safe: true}};
 var Query = require('./model/query');
@@ -56,6 +56,6 @@ app.route('/api/latest/imagesearch').get(function(req,res){
 		});
 });
 
-app.listen(5000, function(){
+app.listen(port, function(){
 	console.log('app running');
 });
