@@ -1,2 +1,2 @@
 .env
-./remove.js
+node_modules
