@@ -3,10 +3,6 @@ header{
 	text-align: center;
 	font-size: 2em;
 }
-blockquote{
-	color:orange;
-	text-align: left;
-}
 h2{
 	position: relative;
 	text-align: center;
@@ -16,17 +12,21 @@ h2{
 h2:nth-of-type(2){padding-top:15px; color:#B80000 ;}
 code{
 	position: relative;
-	left:30%;
+	left:10%;
 	color:darkgreen;	
-	font-size: 1.3em;
+	font-size: .9em;
+}
+h3{
+	position:relative;
+	text-align: center;
+	font-size:1em;
 }
 code:last-of-type{
 	color:black;
-
 }
 #fixWidth{
 	position: absolute;
-	width:630px;
+	width:1017px;
 }
 .container{
 	width:800px;
